@@ -1,0 +1,77 @@
+[project]
+name = "algorithm-visualizer"
+version = "0.1.0"
+description = "Python 수업용 알고리즘 시각화 프로그램 - DFS, BFS 탐색 알고리즘 학습"
+authors = [
+    { name = "jslee7518", email = "jslee7518@gmail.com" }
+]
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+keywords = ["algorithm", "visualization", "education", "dfs", "bfs", "graph"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Education",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+
+dependencies = [
+    "matplotlib==3.10.3",
+    "networkx==3.5",
+    "numpy==2.2.6",
+    "Pillow==11.2.1",
+    "scipy==1.15.3",
+    "typing-extensions>=4.0.0,<5.0.0",
+    "dataclasses-json==0.6.7",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==8.3.5",
+    "black==25.1.0",
+    "flake8==7.2.0",
+    "mypy>=1.0.0",
+]
+
+test = [
+    "pytest==8.3.5",
+    "pytest-cov>=4.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/your-username/algorithm-visualizer"
+Repository = "https://github.com/your-username/algorithm-visualizer"
+Documentation = "https://github.com/your-username/algorithm-visualizer#readme"
+"Bug Tracker" = "https://github.com/your-username/algorithm-visualizer/issues"
+
+[project.scripts]
+algorithm-visualizer = "main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"] 
+
+[tool.uv.workspace]
+members = [
+    "algorithm-visualizer",
+]

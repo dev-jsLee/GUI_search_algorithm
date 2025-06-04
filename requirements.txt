@@ -1,0 +1,16 @@
+# 핵심 패키지 (Python 3.11용)
+matplotlib==3.10.3
+networkx==3.5
+numpy==2.2.6
+
+# GUI 및 시각화 개선
+Pillow==11.2.1
+scipy==1.15.3
+
+# 개발 및 테스트 도구
+pytest==8.3.5
+black==25.1.0
+flake8==7.2.0
+
+# 데이터 구조 및 유틸리티
+dataclasses-json==0.6.7 

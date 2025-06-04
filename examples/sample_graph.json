@@ -1,0 +1,80 @@
+{
+  "nodes": [
+    {
+      "id": "A",
+      "data": {
+        "pos": [0, 2],
+        "label": "A"
+      }
+    },
+    {
+      "id": "B", 
+      "data": {
+        "pos": [-1, 1],
+        "label": "B"
+      }
+    },
+    {
+      "id": "C",
+      "data": {
+        "pos": [1, 1], 
+        "label": "C"
+      }
+    },
+    {
+      "id": "D",
+      "data": {
+        "pos": [-2, 0],
+        "label": "D"
+      }
+    },
+    {
+      "id": "E",
+      "data": {
+        "pos": [0, 0],
+        "label": "E"
+      }
+    },
+    {
+      "id": "F",
+      "data": {
+        "pos": [2, 0],
+        "label": "F"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "A",
+      "target": "B"
+    },
+    {
+      "source": "A", 
+      "target": "C"
+    },
+    {
+      "source": "B",
+      "target": "D"
+    },
+    {
+      "source": "B",
+      "target": "E"
+    },
+    {
+      "source": "C",
+      "target": "E"
+    },
+    {
+      "source": "C",
+      "target": "F"
+    },
+    {
+      "source": "D",
+      "target": "E"
+    },
+    {
+      "source": "E",
+      "target": "F"
+    }
+  ]
+} 
