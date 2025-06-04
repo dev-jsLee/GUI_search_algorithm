@@ -25,21 +25,17 @@ dependencies = [
     "numpy==2.2.6",
     "Pillow==11.2.1",
     "scipy==1.15.3",
-    "typing-extensions>=4.0.0,<5.0.0",
-    "dataclasses-json==0.6.7",
+    "dataclasses-json==0.6.7"
 ]
 
 [project.optional-dependencies]
 dev = [
     "pytest==8.3.5",
     "black==25.1.0",
-    "flake8==7.2.0",
-    "mypy>=1.0.0",
+    "flake8==7.2.0"
 ]
-
 test = [
-    "pytest==8.3.5",
-    "pytest-cov>=4.0.0",
+    "pytest==8.3.5"
 ]
 
 [project.urls]
@@ -73,5 +69,14 @@ python_functions = ["test_*"]
 
 [tool.uv.workspace]
 members = [
-    "algorithm-visualizer",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "src",
+    "algorithms",
+    "examples",
+    "gui",
+    "scripts",
+    "utils"
 ]
