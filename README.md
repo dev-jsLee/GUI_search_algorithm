@@ -31,10 +31,9 @@ Python 수업에서 사용할 수 있는 교육용 알고리즘 시각화 프로
 #### ⚠️ Python이 설치되지 않은 경우
 ```cmd
 # Windows 사용자 - Python 설치 상태 확인 및 가이드
-install_python_first.bat
+setup.bat
 
-# 또는 Python 자동 설치 시도
-auto_install_python.bat
+# 실행한 뒤 선택지가 나오면 y를 입력하여 계속 진행
 
 # Python 설치 후 아래 단계 진행
 ```
@@ -42,25 +41,20 @@ auto_install_python.bat
 #### Windows 사용자
 ```cmd
 # 저장소 클론 후
-git clone <YOUR_GITHUB_REPOSITORY_URL>
-cd algorithm-visualizer
+git clone https://github.com/dev-jsLee/GUI_search_algorithm .
 
 # 자동 설치 스크립트 실행 (Python 자동 설치 기능 포함)
-setup_windows.bat
-
-# 또는 빠른 설치 (로그 최소화)
-quick_setup.bat
+setup.bat
 ```
 
 #### Linux/macOS 사용자  
 ```bash
 # 저장소 클론 후
-git clone <YOUR_GITHUB_REPOSITORY_URL>
-cd algorithm-visualizer
+git clone https://github.com/dev-jsLee/GUI_search_algorithm .
 
 # 자동 설치 스크립트 실행 (실행 권한 부여 후)
-chmod +x setup_unix.sh
-./setup_unix.sh
+chmod +x setup.sh
+./setup.sh
 ```
 
 > 💡 **설치 안내**: 스크립트들이 자동으로 Python 설치 상태를 확인하고, 
